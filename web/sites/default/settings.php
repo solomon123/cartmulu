@@ -781,8 +781,8 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 # }
 $databases['default']['default'] = array (
   'database' => 'cartmulu',
-  'username' => 'root',
-  'password' => '',
+  'username' => 'cm',
+  'password' => 'Ruth#3022',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
