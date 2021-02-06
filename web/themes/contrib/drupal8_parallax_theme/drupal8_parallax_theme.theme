@@ -142,6 +142,12 @@ function drupal8_parallax_theme_get_slider_content() {
       $path = base_path() . drupal_get_path('theme', 'drupal8_parallax_theme') . theme_get_setting('slide_image_path_' . $i, 'drupal8_parallax_theme');
     }
     $slide_show_link = theme_get_setting('slide_url_' . $i, 'drupal8_parallax_theme');
+    // this if else help to prevent 1st slider caption
+    if($i==1){
+      $slider_content[$i] = '<li>
+      <img src="' . $path . '" alt="Slider Banner" />
+    </li>';
+  }else{
     $slider_content[$i] = '<li>
       <img src="' . $path . '" alt="Slider Banner" />
       <div class="slider-caption">
@@ -150,6 +156,7 @@ function drupal8_parallax_theme_get_slider_content() {
         ' . (empty($slide_show_link) ? '' : '<a href="' . $slide_show_link . '" class="more-link">Read more</a>') . '
       </div>
     </li>';
+    }
   }
   return $slider_content;
 }
