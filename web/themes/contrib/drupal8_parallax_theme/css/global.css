@@ -373,7 +373,7 @@ nav h2 { display: none; }
 .topwidget .block { margin: 0; }
 
 .parallax-widget { background: url("../images/parallax/one.jpg"); background-size: cover; min-height: 500px; }
-.parallax-widget .parallax-region { background: rgba(255, 255, 255, 0.9); padding: 20px; max-width: 650px; margin: 0 auto; }
+.parallax-widget .parallax-region { background: rgba(255, 255, 255, 0.9); padding: 20px; margin: 0 auto; } /*max-width: 650px;*/
 .parallax-widget.zero { background: url("../images/parallax/zero.jpg"); background-size: cover; }
 .parallax-widget.zero .parallax-region { padding: 0; background: none; }
 .parallax-widget.one { background: url("../images/parallax/one.jpg") fixed; background-size: cover; }
